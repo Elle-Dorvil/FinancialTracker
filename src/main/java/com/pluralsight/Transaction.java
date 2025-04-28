@@ -1,34 +1,36 @@
 package com.pluralsight;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 public class Transaction {
-    private String startDate;
-    private String endDate;
+    private LocalDate date;
+    private LocalTime time;
     private String description;
     private String vendor;
     private double amount;
 
-public Transaction(String startDate, String endDate, String Description, String Vendor, double Amount) {
-    this.startDate = startDate;
-    this.endDate = endDate;
-    this.description = description;
-    this.vendor = vendor;
-    this.amount = amount;
-}
-
-    public String getStartDate() {
-        return startDate;
+    public Transaction(LocalDate date, LocalTime time, String description, String vendor, double amount) {
+        this.date = date;
+        this.time = time;
+        this.description = description;
+        this.vendor = vendor;
+        this.amount = amount;
     }
 
-    public void setStartDate(String startDate) {
-        this.startDate = startDate;
+    public LocalDate getDate() {
+        return date;
     }
 
-    public String getEndDate() {
-        return endDate;
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
-    public void setEndDate(String endDate) {
-        this.endDate = endDate;
+    public LocalTime getTime() {
+        return time;
+    }
+
+    public void setTime(LocalTime time) {
+        this.time = time;
     }
 
     public String getDescription() {
@@ -57,12 +59,7 @@ public Transaction(String startDate, String endDate, String Description, String 
 
     @Override
     public String toString() {
-        return "Transaction{" +
-                "startDate='" + startDate + '\'' +
-                ", endDate='" + endDate + '\'' +
-                ", description='" + description + '\'' +
-                ", vendor='" + vendor + '\'' +
-                ", amount=" + amount +
-                '}';
+        return "Transaction{" + "date=" + date + ", time=" + time + ", description='" + description +
+                '\'' + ", vendor='" + vendor + '\'' + ", amount=" + amount + '}';
     }
 }
