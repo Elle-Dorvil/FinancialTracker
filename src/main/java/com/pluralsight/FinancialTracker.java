@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -60,6 +62,21 @@ public class FinancialTracker {
         // For example: 2023-04-15|10:13:25|ergonomic keyboard|Amazon|-89.50
         // After reading all the transactions, the file should be closed.
         // If any errors occur, an appropriate error message should be displayed.
+        String line;
+        try {
+            BufferedReader br = new BufferedReader(new FileReader("transactions.cvs"));
+            while ((line = br.readLine()) != null ) {
+                String[] date = line.split("\\|");
+                String[] time = line.split("\\|");
+                String[] description = line.split();
+                
+            }
+            br.close();
+
+
+        }catch (Exception e) {
+
+        }
     }
 
     private static void addDeposit(Scanner scanner) {
