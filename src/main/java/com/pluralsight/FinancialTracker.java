@@ -65,7 +65,7 @@ public class FinancialTracker {
         // If any errors occur, an appropriate error message should be displayed.
         String line;
         try {
-            BufferedReader br = new BufferedReader(new FileReader("transactions.cvs"));
+            BufferedReader br = new BufferedReader(new FileReader("transactions.csv"));
             while ((line = br.readLine()) != null) {
                 String[] parts = line.split("\\|");
                 LocalDate date = LocalDate.parse(parts[0], DATE_FORMATTER);
@@ -85,11 +85,20 @@ public class FinancialTracker {
     }
 
     private static void addDeposit(Scanner scanner) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter Date and Time in the following format: yyyy-MM-dd HH:mm:ss : ");
+        input.nextLine()
+        double amount = input.nextDouble();
         // This method should prompt the user to enter the date, time, description, vendor, and amount of a deposit.
         // The user should enter the date and time in the following format: yyyy-MM-dd HH:mm:ss
         // The amount should be a positive number.
         // After validating the input, a new `Transaction` object should be created with the entered values.
         // The new deposit should be added to the `transactions` ArrayList.
+        for (Transaction transaction : transactions) {
+            if (transactions.getAmount() == amount) {
+
+            }
+        }
     }
 
     private static void addPayment(Scanner scanner) {
@@ -137,7 +146,7 @@ public class FinancialTracker {
 
     private static void displayLedger() {
         for (Transaction transaction : transactions) {
-            System.out.println(transactions + " ");
+            System.out.println(transaction);
             // This method should display a table of all transactions in the `transactions` ArrayList.
             // The table should have columns for date, time, description, vendor, and amount.
         }
