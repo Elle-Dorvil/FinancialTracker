@@ -214,10 +214,10 @@ public class FinancialTracker {
 
         private static void displayDeposits () {
             for (Transaction transaction : transactions) {
-                if(transaction.getAmount()>0){
+                if(transaction.getAmount() < 0){
                     System.out.println(transaction);
                 }
-               
+
             }
             // This method should display a table of all deposits in the `transactions` ArrayList.
             // The table should have columns for date, time, description, vendor, and amount.
@@ -225,9 +225,11 @@ public class FinancialTracker {
 
         private static void displayPayments () {
             for (Transaction transaction : transactions) {
-                System.out.println(transaction);
-                // This method should display a table of all payments in the `transactions` ArrayList.
-                // The table should have columns for date, time, description, vendor, and amount.
+                if (transaction.getAmount() > 0) {
+                    System.out.println(transaction);
+                    // This method should display a table of all payments in the `transactions` ArrayList.
+                    // The table should have columns for date, time, description, vendor, and amount.
+                }
             }
         }
 
