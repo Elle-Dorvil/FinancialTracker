@@ -1,4 +1,5 @@
 package com.pluralsight;
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -59,7 +60,6 @@ public class Transaction {
 
     @Override
     public String toString() {
-        return "Transaction{" + "date=" + date + ", time=" + time + ", description='" + description +
-                '\'' + ", vendor='" + vendor + '\'' + ", amount=" + amount + '}';
+        return date + "|" + time + "|" + description + "|" + vendor + "|" + amount;
     }
 }
