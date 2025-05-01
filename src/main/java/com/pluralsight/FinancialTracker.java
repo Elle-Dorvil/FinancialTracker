@@ -262,14 +262,22 @@ public class FinancialTracker {
                             // Generate a report for all transactions within the previous month,
                             // including the date, time, description, vendor, and amount for each transaction.
                         case "3":
-                            
+                            LocalDate YearToDate = LocalDate.now().withDayOfYear(1);
+                            filterTransactionsByDate(YearToDate, LocalDate.now());
+                            break;
                             // Generate a report for all transactions within the current year,
                             // including the date, time, description, vendor, and amount for each transaction.
 
                         case "4":
+                            LocalDate PreviousYear = LocalDate.now().minusYears(1);
+                            filterTransactionsByDate(PreviousYear, LocalDate.now());
                             // Generate a report for all transactions within the previous year,
                             // including the date, time, description, vendor, and amount for each transaction.
                         case "5":
+                            Scanner myscanner = new Scanner(System.in);
+                            System.out.println("Vendor Name: ");
+                            String VendorInput = myscanner.nextLine();
+                            filterTransactionsByVendor(VendorInput);
                             // Prompt the user to enter a vendor name, then generate a report for all transactions
                             // with that vendor, including the date, time, description, vendor, and amount for each transaction.
                         case "0":
