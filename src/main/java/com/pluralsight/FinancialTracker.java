@@ -178,6 +178,7 @@ public class FinancialTracker {
     private static void displayLedger() {
         for (Transaction transaction : transactions) {
             System.out.println(transaction);
+            System.out.printf("%-12s %-10s %-30s %-20s %-10s%n", "Date", "Time", "Description", "Vendor", "Amount");
         }
     }
 
@@ -185,6 +186,7 @@ public class FinancialTracker {
         for (Transaction transaction : transactions) {
             if (transaction.getAmount() > 0) {
                 System.out.println(transaction);
+                System.out.printf("%-12s %-10s %-30s %-20s %-10s%n", "Date", "Time", "Description", "Vendor", "Amount");
             }
 
         }
@@ -194,6 +196,7 @@ public class FinancialTracker {
         for (Transaction transaction : transactions) {
             if (transaction.getAmount() < 0) {
                 System.out.println(transaction);
+                System.out.printf("%-12s %-10s %-30s %-20s %-10s%n", "Date", "Time", "Description", "Vendor", "Amount");
             }
         }
     }
@@ -244,8 +247,16 @@ public class FinancialTracker {
 
     private static void filterTransactionsByDate(LocalDate startDate, LocalDate endDate) {
         for (Transaction transaction : transactions) {
+            // Loops through all transactions in my list
+            // for each transaction, it compares the transaction date to the startDate and endDate
+            //If the date falls within the specified range, it prints out the transaction
             if (!transaction.getDate().isBefore(startDate) && !transaction.getDate().isAfter(endDate)) {
+                // returns true if the date is on or after the start date
+                // returns true if the date is on or before the end date
+                // ensures all transactions that fall within the date range is included.
+                // even the one that are on the cusp
                 System.out.println(transaction);
+                System.out.printf("%-12s %-10s %-30s %-20s %-10s%n", "Date", "Time", "Description", "Vendor", "Amount");
             }
         }
     }
@@ -254,6 +265,7 @@ public class FinancialTracker {
         for (Transaction transaction : transactions) {
             if (transaction.getVendor().equalsIgnoreCase(vendorInput)) {
                 System.out.println(transaction);
+                System.out.printf("%-12s %-10s %-30s %-20s %-10s%n", "Date", "Time", "Description", "Vendor", "Amount");
             }
         }
     }
