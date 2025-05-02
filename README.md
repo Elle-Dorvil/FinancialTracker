@@ -42,7 +42,8 @@ Follow these steps to get your application running within IntelliJ IDEA:
 - GitBash
 
 ## Demo
-https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExamFlbTlkbzBqbWplMmw2eDJ4YWVhdzBnd3IydHR0amN4bTVpOXd4diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PsvQiKj0RbVECG2VmV/giphy.gif
+![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExamFlbTlkbzBqbWplMmw2eDJ4YWVhdzBnd3IydHR0amN4bTVpOXd4diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PsvQiKj0RbVECG2VmV/giphy.gif)
+
 
 ## Future Work
 
