@@ -221,16 +221,18 @@ public class FinancialTracker {
                     filterTransactionsByDate(firstDayMonth, LocalDate.now());
                     break;
                 case "2":
-                    LocalDate previousMonth = LocalDate.now().minusMonths(1);
-                    filterTransactionsByDate(previousMonth, LocalDate.now());
+                    LocalDate startDate = LocalDate.now().withDayOfMonth(1).minusMonths(1);
+                    LocalDate endDate = LocalDate.now().withDayOfMonth(1).minusDays(1);
+                    filterTransactionsByDate(endDate, startDate);
                     break;
                 case "3":
                     LocalDate YearToDate = LocalDate.now().withDayOfYear(1);
                     filterTransactionsByDate(YearToDate, LocalDate.now());
                     break;
                 case "4":
-                    LocalDate PreviousYear = LocalDate.now().minusYears(1);
-                    filterTransactionsByDate(PreviousYear, LocalDate.now());
+                    startDate = LocalDate.now().withDayOfYear(1).minusYears(1);
+                    endDate = LocalDate.now().withDayOfYear(1).minusYears(1);
+                    filterTransactionsByDate(endDate, startDate);
                 case "5":
                     Scanner myscanner = new Scanner(System.in);
                     System.out.println("Vendor Name: ");
