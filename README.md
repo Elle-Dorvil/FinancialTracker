@@ -1,17 +1,21 @@
 # Project Title
+Financial Tracker
 
 ## Description of the Project
 
 Briefly describe what this Java console application does. Mention its purpose and who the intended users are. Explain the main functionality and what problems it aims to solve.
 
-![Class Diagram](path/to/your/class_diagram.png)
 
 ## User Stories
 
-List the user stories that guided the development of your application. Format these stories as: "As a [type of user], I want [some goal] so that [some reason]."
-
-- As a user, I want to be able to input my data, so that the application can process it accordingly.
-- As a user, I want to receive immediate feedback, so I can understand what to do next.
+As a user, I want to add a deposit, so that I can track money coming into my account.
+As a user, I want to make a payment so I can track money coming out of my account.
+As a user I want to view my ledger so I can see all of my financial transactions.
+As a user, I want to filter and see only deposits so I can track incoming funds easily.
+As a user, I want to filter and view payments only so I can see how I spent my money.
+As a user, I want to see my transactions for the current month so I can see my recent financial activities.
+As a user, I want to search by vendor so I can look up specific transactions with specific vendors.
+As a user, I want to exit the application when I'm done so I can close it properly.
 
 ## Setup
 
@@ -34,8 +38,8 @@ Follow these steps to get your application running within IntelliJ IDEA:
 
 ## Technologies Used
 
-- Java: Mention the version you are using.
-- Any additional libraries or frameworks used in the project.
+- Java corretto 17
+- GitBash
 
 ## Demo
 
@@ -47,25 +51,20 @@ Include screenshots or GIFs that show your application in action. Use tools like
 
 Outline potential future enhancements or functionalities you might consider adding:
 
-- Additional feature to be developed.
-- Improvement of current functionalities.
+- 
+- 
 
 ## Resources
 
 List resources such as tutorials, articles, or documentation that helped you during the project.
 
-- [Java Programming Tutorial](https://www.example.com)
-- [Effective Java](https://www.example.com)
-
-## Team Members
-
-- **Name 1** - Specific contributions or roles.
-- **Name 2** - Specific contributions or roles.
+- https://github.com/RayMaroun/yearup-spring-section-10-2025/tree/master/pluralsight/java-development
+- ChatGPT
 
 ## Thanks
 
 Express gratitude towards those who provided help, guidance, or resources:
 
-- Thank you to [Mentor's Name] for continuous support and guidance.
-- A special thanks to all teammates for their dedication and teamwork.
+- Thank you to Raymond for continuous support and guidance.
+- A special thanks to all classmates for their support and encouraging words.
  
