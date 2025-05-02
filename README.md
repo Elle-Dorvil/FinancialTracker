@@ -19,8 +19,12 @@ With this application, users will be able to add deposits, make payments, as wel
 
 ## Setup
 
-Instructions on how to set up and run the project using IntelliJ IDEA.
-
+1. Open IntelliJ IDEA.
+2. Select "Open" and navigate to the directory where you cloned or downloaded the project.
+3. After the project opens, wait for IntelliJ to index the files and set up the project.
+4. Find the main class with the `public static void main(String[] args)` method.
+5. Right-click on the file and select 'Run 'YourMainClassName.main()'' to start the application.
+6. 
 ### Prerequisites
 
 - IntelliJ IDEA: Ensure you have IntelliJ IDEA installed, which you can download from [here](https://www.jetbrains.com/idea/download/).
