@@ -3,19 +3,19 @@ Financial Tracker
 
 ## Description of the Project
 
-Briefly describe what this Java console application does. Mention its purpose and who the intended users are. Explain the main functionality and what problems it aims to solve.
+With this application, users will be able to add deposits, make payments, as well as see their transactions report. A good way to balance out how their spending their money or where it's going.
 
 
 ## User Stories
 
-As a user, I want to add a deposit, so that I can track money coming into my account.
-As a user, I want to make a payment so I can track money coming out of my account.
-As a user I want to view my ledger so I can see all of my financial transactions.
-As a user, I want to filter and see only deposits so I can track incoming funds easily.
-As a user, I want to filter and view payments only so I can see how I spent my money.
-As a user, I want to see my transactions for the current month so I can see my recent financial activities.
-As a user, I want to search by vendor so I can look up specific transactions with specific vendors.
-As a user, I want to exit the application when I'm done so I can close it properly.
+- As a user, I want to add a deposit, so that I can track money coming into my account.
+- As a user, I want to make a payment so I can track money coming out of my account.
+- As a user I want to view my ledger so I can see all of my financial transactions.
+- As a user, I want to filter and see only deposits so I can track incoming funds easily.
+- As a user, I want to filter and view payments only so I can see how I spent my money.
+- As a user, I want to see my transactions for the current month so I can see my recent financial activities.
+- As a user, I want to search by vendor so I can look up specific transactions with specific vendors.
+- As a user, I want to exit the application when I'm done so I can close it properly.
 
 ## Setup
 
