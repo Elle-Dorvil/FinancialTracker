@@ -42,17 +42,14 @@ Follow these steps to get your application running within IntelliJ IDEA:
 - GitBash
 
 ## Demo
-
-Include screenshots or GIFs that show your application in action. Use tools like [Giphy Capture](https://giphy.com/apps/giphycapture) to record a GIF of your application.
-
-![Application Screenshot](path/to/your/screenshot.png)
+https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExamFlbTlkbzBqbWplMmw2eDJ4YWVhdzBnd3IydHR0amN4bTVpOXd4diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PsvQiKj0RbVECG2VmV/giphy.gif
 
 ## Future Work
 
 Outline potential future enhancements or functionalities you might consider adding:
 
-- 
-- 
+- I would love to add a balance feature so the user can see their account balance
+- Also a transfer feature so they could transfer their money in the account
 
 ## Resources
 
@@ -60,6 +57,7 @@ List resources such as tutorials, articles, or documentation that helped you dur
 
 - https://github.com/RayMaroun/yearup-spring-section-10-2025/tree/master/pluralsight/java-development
 - ChatGPT
+- Google
 
 ## Thanks
 
